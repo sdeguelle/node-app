@@ -9,4 +9,3 @@ services:
       - "3000:3000"
     working_dir: /usr/src/node-app
     command: npm run start
-    
