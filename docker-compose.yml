@@ -1,0 +1,12 @@
+version: '3'
+services:
+  node-app:
+    image: node:16-buster
+    container_name: "node-app"
+    volumes:
+      - ./:/usr/src/node-app
+    ports:
+      - "3000:3000"
+    working_dir: /usr/src/node-app
+    command: npm run start
+    
